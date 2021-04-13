@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(27, 27, 27);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+nav a img {
+  color: rgb(27, 27, 27);
+  width: 16px;
+  height: 16px;
+}
+
+nav button {
+  padding: 0.6rem 1.5rem;
+  background-color: rgb(57, 57, 252);
+  border-style: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: rgb(245, 245, 245);
+  cursor: pointer;
+}
+
+.nav {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 35%;
+  margin-left: auto;
+}
+
+input {
+  padding: 0.7rem;
+  border: 1px solid rgba(0, 0, 0, 0.219);
+  border-radius: 30px;
+  width: 40%;
+  margin-top: 2rem;
+  background: url(icons/search.png) no-repeat scroll 10px 10px;
+  padding-left: 30px;
+}
+
+main {
+  text-align: center;
+  margin: auto;
+}
+
+.main-link a {
+  color: rgba(0, 0, 0, 0.651);
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.main-link a:hover {
+  border: 1px solid rgba(0, 0, 0, 0.171);
+  padding: 0.5rem;
+}
+
+.main-link {
+  display: inline-block;
+  margin: 3rem 1rem;
+}
+
+.footer-top {
+  background-color: rgba(219, 218, 218, 0.432);
+  color: rgb(80, 80, 80);
+  padding: 1rem;
+  border-bottom: 1px solid rgb(199, 197, 197);
+}
+
+.footer-bottom {
+  background-color: rgba(219, 218, 218, 0.432);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.leaf {
+  width: 16px;
+  height: 16px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-bottom a {
+  color: rgb(80, 80, 80);
+}
+
+.footer-bottom-1 a {
+  margin-right: 1rem;
+}
+
+.footer-bottom-3 a {
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 850px) {
+  .mobile-nav {
+    display: inline-block;
+  }
+
+  .desk-nav {
+    display: none;
+  }
+
+  main img {
+    width: 30%;
+    margin-top: 3rem;
+  }
+
+  input {
+    width: 60%;
+  }
+
+  .footer-bottom {
+    display: none;
+  }
+}
